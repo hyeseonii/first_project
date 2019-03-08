@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+   <a href="../test/"> hi! </a>    
+   <br>
+   {% for cat in cats_key %}
+   		<div style="width:100%, height: auto; background-color: yellow; border: 1px solid red; margin-bottom: 20px;">
+   		{{cat.name}}<br>
+   		{{cat.age}}<br>
+   		{{cat.kind}}<br>
+   		<img src="../../media/{{cat.image}}" style="width: 100px; height: 100px;"><br>
+   		</div>
+   {% endfor %}   
+</body>
+</html>
